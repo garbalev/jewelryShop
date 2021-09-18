@@ -1,0 +1,435 @@
+:root {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.firstPage {
+  height: 100vh;
+  width: 100%;
+  background-image: url("./images/firstPage/background.png");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.firstPage .firstPageHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 65%;
+  height: 5vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+.firstPage .firstPageHeader .firstPageHeaderLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35%;
+}
+
+.firstPage .firstPageHeader .firstPageHeaderLeft p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.firstPage .firstPageHeader .firstPageHeaderLogo {
+  width: 21rem;
+}
+
+.firstPage .firstPageHeader .firstPageHeaderRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35%;
+}
+
+.firstPage .firstPageHeader .firstPageHeaderRight :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.firstPage .firstPageHeader .firstPageHeaderRight :nth-child(1) img {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 1rem;
+}
+
+.firstPage .firstPageHeader .firstPageHeaderRight :nth-child(1) p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.firstPage .firstPageHeader .firstPageHeaderRight :nth-child(2) p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.firstPage .firstPageHeader .firstPageHeaderRight :nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.firstPage .firstPageHeader .firstPageHeaderRight :nth-child(3) svg:nth-child(1) {
+  margin-right: 2rem;
+}
+
+.firstPage h1 {
+  margin: 0 auto;
+  margin-top: 55vh;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.firstPage a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #fff;
+  width: 26rem;
+  height: 5rem;
+  margin: 0 auto;
+  margin-top: 5vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+}
+
+.firstPage .firstPageFooter {
+  border-top: 2px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 7rem;
+}
+
+.firstPage .firstPageFooter .firstPageFooterContent {
+  width: 80%;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.firstPage .firstPageFooter .firstPageFooterContent div {
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+}
+
+.secondPage {
+  width: 100%;
+}
+
+.secondPage .secondPageContent {
+  width: 110rem;
+  margin: 0 auto;
+  padding: 11rem 0;
+}
+
+.secondPage .secondPageContent h3 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+  font-size: 2.1rem;
+  color: #333;
+  text-align: center;
+  margin: 0;
+}
+
+.secondPage .secondPageContent h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #333;
+  text-align: center;
+  margin: 1.5rem 0 6rem;
+}
+
+.secondPage .secondPageContent .secondPageContentButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.secondPage .secondPageContent .secondPageContentButtons a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 17rem;
+  height: 5rem;
+  border: 2px solid #D6D6D6;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.secondPage .secondPageContent .secondPageContentBlocks {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  row-gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.secondPage .secondPageContent .secondPageContentBlocks a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 32rem;
+}
+
+.secondPage .secondPageContent .secondPageContentBlocks a img {
+  width: 100%;
+}
+
+.secondPage .secondPageContent .secondPageContentBlocks a p {
+  position: absolute;
+  bottom: 3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  width: 100%;
+  text-align: center;
+}
+
+.thirdPage {
+  width: 100%;
+  background-color: black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.thirdPage h3 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+  font-size: 2.1rem;
+  text-align: center;
+  margin: 10rem 0 1.5rem;
+}
+
+.thirdPage h1 {
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 4.5rem;
+}
+
+.thirdPage p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+  font-size: 1.8rem;
+  width: 43%;
+  text-align: center;
+  margin: 0 auto 6rem;
+}
+
+.thirdPage a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24rem;
+  height: 5rem;
+  margin: 0 auto 10rem;
+  background-color: #fff;
+  border: 2px solid black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: black;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.forthPage {
+  width: 110rem;
+  margin: 12rem auto;
+}
+
+.forthPage h3 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+  font-size: 2.1rem;
+  color: black;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.forthPage h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  margin: 0 0 6rem;
+}
+
+.forthPage .forthPageBlockS {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.forthPage .forthPageBlockS a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35rem;
+  position: relative;
+}
+
+.forthPage .forthPageBlockS a img {
+  width: 100%;
+}
+
+.forthPage .forthPageBlockS a p {
+  position: absolute;
+  bottom: 3.5rem;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+  font-size: 2.1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.forthPage .forthPageButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 7.5rem auto 0;
+  width: 25rem;
+  height: 5rem;
+  background-color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=style.css.map */
