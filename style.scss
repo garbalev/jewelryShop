@@ -12,8 +12,10 @@
   @media (max-width: 840px) {
     font-size: 6.5px;
 }
+}
 
-//  border 760
+svg {
+    cursor: pointer;
 }
 
 body {
@@ -78,6 +80,7 @@ p {
                             color: #fff;
                             text-decoration: none; 
                             width:fit-content;
+                            cursor: pointer;
                             &:hover {
                                 color: rgb(170, 170, 170);
                             }
@@ -124,11 +127,11 @@ p {
     .firstPageHeader{
         display: flex;
         width: 65%;
-        height: 5vh;
+        height: 6vh;
         justify-content: space-between;
         margin: 0 auto;
-        padding-top: 3rem;
-        @media  (max-width: 1120px) {
+        padding-top: 2rem;
+        @media  (max-width: 1300px) {
                 width: 80%;
         }
         @media (max-width: 960px) {
@@ -143,6 +146,7 @@ p {
 
                     a {
                         @include FPHeader();
+                        cursor: pointer;
                         text-decoration: none;
                         &:hover{
                             color: rgb(199, 199, 199);
@@ -175,6 +179,7 @@ p {
                             
                             p {
                                 @include FPHeader();
+                                cursor: help;
                             }
                     }
 
@@ -183,6 +188,7 @@ p {
                             a {
                                 @include FPHeader();
                                 text-decoration: none;
+                                cursor: pointer;
                                 &:hover {
                                     color: rgb(199, 199, 199);
                                 }
@@ -306,6 +312,7 @@ p {
         font-size: 1.8rem;
         font-weight: 500;
         letter-spacing: 0.3rem;
+        cursor: alias;
         &:hover {
             background-color:rgb(121, 120, 120);
             transform: scaleX(1.02);
@@ -397,6 +404,7 @@ p {
                             letter-spacing: 0.1em;
                             text-transform: uppercase;
                             color: #333;
+                            cursor: pointer;
                             &:hover {
                                 background-color: rgb(107, 107, 107);
                                 color: #fff;
@@ -443,6 +451,7 @@ p {
                             display: flex;                        
                             width: 32rem;
                             overflow: hidden;
+                            cursor: pointer;
                             // height: 28rem;
                             &:hover img {
                                 transform: scale(1.3);
@@ -539,6 +548,7 @@ p {
             color: black;
             letter-spacing: 0.1em;
             text-transform: uppercase;
+            cursor: pointer;
             &:hover {
                 transform: translateY(0.3rem);
                 letter-spacing: 0.15em;
@@ -584,6 +594,7 @@ p {
                     width: 32rem;
                     position: relative;
                     overflow: hidden;
+                    cursor: pointer;
                     &:hover img {
                         transform: scale(1.3);
                         filter: blur(0);
@@ -634,6 +645,7 @@ p {
             font-weight: 500;
             letter-spacing: 0.1em;
             text-transform: uppercase;
+            cursor: pointer;
             &:hover {
                 transform: translateY(0.3rem);
                 letter-spacing: 0.15em;
@@ -809,6 +821,7 @@ p {
                                     font-size: 1.5rem;
                                     font-weight: 500;
                                     letter-spacing: 0.05em;
+                                    cursor: pointer;
                                     &:hover{
                                         transform: translateX(0.1rem);
                                         letter-spacing: 0.1em;
@@ -849,6 +862,8 @@ p {
                             color: black;
                             text-decoration: none;
                             margin-bottom: 1.5rem;
+                            width: fit-content;
+                            cursor: pointer;
                             &:hover {
                                 color: rgb(150, 149, 149);
                                 text-decoration: underline;
@@ -887,6 +902,10 @@ p {
                     display: flex;
                     align-items: center;
                     margin-bottom: 1.5rem;
+
+                        svg {
+                            cursor: default
+                        }
 
                         p {
                             @include FPHeader();
