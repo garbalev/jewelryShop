@@ -35,7 +35,7 @@ p {
     color: #333333;
 }
   
-@mixin ForthPageH1 {
+@mixin FivthPageH1 {
     border-bottom: 1px solid #000;
     margin: 0 0 3rem;
     padding-bottom: 1rem;
@@ -320,85 +320,402 @@ header {
 
 .firstPage {
     width: 100%;
-    padding-top: 9rem;
-    position: relative;
-    
+    margin-top: 6rem;
 
-        .firstPageMenu {
-            width: 65%;
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap;
-            row-gap: 75px;
-            justify-content: space-between;
+    .firstPageMenu {
+        width: 30%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
 
-                .firstPageMenuBlock {
-                    position: relative;
-                    width: 15%;
+            a, span {
+                @include FPHeader();
+                &:hover {
+                    text-decoration: none;
+                } 
+            }
             
-                        div:nth-child(odd) {
-                            width: 100%;
-                            height: 2rem;
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            padding-bottom: 1rem;
-                            border-bottom: 2px solid #d6d6d6;
-                            transition: 0.8s;
-                            cursor: pointer;
-                            &:hover {
-                                background-color: #333333;
-                                border-radius: 5px;
+            span {
+                font-size: 16px;
+            }
+    }
+
+    .firstPageContent {
+        width: 65%;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 40px;
+        justify-content: space-between;
+        margin: 5rem auto 0;
+
+            .firstPageContentLeft {
+                width: 46%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                border: 1px solid gray;
+                padding: 1rem;
+
+
+                    div {
+                        width: 100%;
+                        height: 70%;
+                        overflow: hidden;
+                        padding-bottom: 5px;
+                        border-bottom: 1px solid gray;
+                        &:hover {
+                            img {
+                            transform: scale(1.2);
                             }
-                            &:hover p {
-                                color: #fff
+                        }    
+
+                            img {
+                                    width: 100%;
+                                    height: 100%;
+                                    transition: 0.7s;
+                                    filter: blur(0);  
                             }
-                            &:hover svg {
-                                fill: #fff
+                    }
+
+                    img {
+                        width: 32%;
+                        filter: blur(0.5px);
+                    }
+            }
+
+            .firstPageContentRight {
+                width: 46%;
+                border: 1px solid gray;
+                padding: 2rem 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                position: relative;
+
+                            h1 {
+                                margin: 0;
+                                @include FPHeader();
+                                font-weight: 500;
+                                font-size: 2.2rem;
+                                letter-spacing: 0.1em;
+                                text-transform: uppercase;
                             }
 
-                                p {
-                                    @include FPHeader();
-                                    font-size: 1.6rem;
-                                    color: #333333;
-                                    margin-left: 3px;
-                                }
 
-                                svg {
-                                    margin-right: 3px;
-                                }
-                        }
+                            #border {
+                                width: 100%;
+                                height: 1px;
+                                background-color: #979797
+                            }
 
-                        div:nth-child(even) {
-                            width: 100%;
-                            display: none;
-                            flex-direction: column;
-                            top: 3rem;
-                            position: absolute;
-                            background-color: #333333;
-                            border-radius: 0 0 10px 10px;
+                            p {
+                                @include FPHeader();
+                                margin-bottom: 10px;
 
-                                p{
+                            }  
+
+                            h2 {
+                                @include FPHeader();
+                                font-weight: 600;
+                                font-size: 2.4rem;
+                                letter-spacing: 0.05em;
+                                text-transform: uppercase;
+                                margin: 0;
+                            }
+
+                            .firstPageContentRightButton{
+                                display: flex;
+                                justify-content: space-between;
+
+                                #buy {
+                                    display: flex;
+                                    width: 11rem;
+                                    height: 4rem;
+                                    background-color: #333333;
+                                    border: 1px solid #333333;
                                     @include FPHeader();
                                     color: #fff;
-                                    font-size: 1.4rem;
-                                    border-top: 1px solid #d6d6d6;
-                                    margin-bottom: 5px;
-                                    padding-left: 3px;
-                                    cursor: pointer;
+                                    font-size: 1.8rem;
+                                    letter-spacing: 0.05em;
+                                    text-transform: uppercase;
+                                    justify-content: center;
+                                    align-items: center;
+                                    float: left;
                                     &:hover {
-                                        font-weight: 900;
-                                        text-decoration: underline;
-                                
+                                        background-color: #fff;
+                                        border: 1px solid #333333;
+                                        color: #333333;
+                                        transform: scaleX(1.01);
                                     }
                                 }
+    
+                                #addToCart {
+                                    display: flex;
+                                    width: 22rem;
+                                    height: 4rem;
+                                    background-color: #fff;
+                                    border: 1px solid #333333;
+                                    @include FPHeader();
+                                    color: #333333;
+                                    font-size: 1.8rem;
+                                    letter-spacing: 0.05em;
+                                    text-transform: uppercase;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin-right: 2rem;
+                                    &:hover {
+                                        background-color: #333333;
+                                        border: 1px solid #333333;
+                                        color: #fff;
+                                        transform: scaleX(1.01);
+                                    }
+                                }
+                            }
+            }
+            
+    }
+
+    @media (max-width: 1200px) {
+        
+        .firstPageMenu {
+            width: 40%;
+        }
+
+
+        .firstPageContent {
+            width: 80%;
+
+                .firstPageContentRight {
+                    padding: 1rem;
+                }
+        }
+    }
+
+    @media (max-width: 900px) {            
+            
+        .firstPageMenu {
+            width: 45%;
+        }
+
+
+        .firstPageContent {
+            width: 90%;
+        }
+    }
+
+    @media (max-width: 800px) {            
+        
+        .firstPageMenu {
+            width: 52%;
+        }
+
+        .firstPageContent {
+            justify-content: center;
+            
+                .firstPageContentLeft {
+                    width: 55%;
+                }
+            
+                .firstPageContentRight {
+                    width: 75%;
+                    display: block;
+                    border: 0;
+
+                        #border {
+                            margin: 2rem 0;
+                        }
+
+                        h2 {
+                            margin-bottom: 2rem;
+                            margin-left: 5px;
+                        }
+                }
+        }
+        
+    }
+
+    @media (max-width:560px) {
+        
+        .firstPageMenu {
+            width: 70%;
+        }
+
+        .firstPageContent {
+
+                .firstPageContentLeft {
+                    width: 65%;
+                }
+
+                .firstPageContentRight {
+                    
+                        h1 {
+                            text-align: center;
+                        }
+
+                        p {
+                            text-align: center;
+                        }
+                }
+        }
+    }
+
+    @media (max-width:400px) {
+
+        .firstPageMenu {
+            width: 85%;
+        }
+
+        .firstPageContent {
+
+            .firstPageContentLeft {
+                width: 85%;
+            }
+        }
+    }
+
+}
+
+.secondPage {
+    width: 60%;
+    margin: 18rem auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    justify-content: space-between;
+
+        .secondPageBlock1{
+            width: 60%;
+            height: fit-content;
+
+                h1 {
+                    @include FPHeader();
+                    font-weight: 600;
+                    font-size: 2.4rem;
+                    margin-top: 0;
+                    margin-left: 5px;
+                }
+
+                p {
+                    @include FPHeader();
+                    font-size: 1.6rem;
+                    position: relative;
+
+                        #more {
+                            display: none;
+                        }
+                }
+
+                .halfBlur::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    height: 60px;
+                    width: 100%;
+                    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.7794468129048494) 67%, rgba(255,255,255,0.33967090254070376) 83%);
+                }
+
+                h2 {
+                    margin: 10px 0 0 5px;
+                    @include FPHeader();
+                    font-weight: 500;
+                    font-style: 1.8rem;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    border: 2px solid #fff;
+                    border-bottom: 2px dashed #333333;
+                    width: fit-content;
+                    cursor: pointer;
+                    transition: 0.5s;
+                    &:hover {
+                        border: 2px dashed #fff;
+                    }
+                }
+        }
+
+        .secondPageBlock2 {
+            width: 30%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 20px;
+                div {
+                    width: 48%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    &:hover {
+                        svg {
+                            transform: scale(1.1);
+                        }
+                    }
+                        
+                        svg {
+                            width: 60px;
+                            cursor: default;
+                            transition: 0.5s;
+                        }
+
+                        p {
+                            margin-top: 10px;
+                            text-align: center;
+                            @include FPHeader();
+                            font-size: 1.4rem;
                         }
                 }
         }
 
-        .firstPageCatalog {
+    @media (max-width: 1050px) {
+        width: 70%;
+    }
+
+    @media (max-width: 770px) {
+        width: 80%;
+        // 645
+    }
+
+    @media (max-width: 645px) {
+        justify-content: center;
+            .secondPageBlock1 {
+                width: 80%;
+
+                    .halfBlur::after {
+                        height: 40px;
+                    }
+            }
+            .secondPageBlock2 {
+                width: 70%;
+            }
+    }
+
+}
+
+.thirdPage {
+    width: 100%;
+    margin: 12rem auto 0;
+
+        p {
+            @include FPHeader();
+            font-size: 2.1rem;
+            text-align: center;
+            width: 70%;
+            margin: 0 auto;
+
+        }
+
+        h1 {
+            font-family: serif;
+            font-weight: 700;
+            font-size: 2.5rem;
+            color: #333333;
+            text-align: center;
+            width: 80%;
+            margin: 1.5rem auto;
+        }
+
+        .thirdPageMiniCatalog {
             width: 65%;
-            margin: 12rem auto 0;
+            margin: 4.5rem auto 0;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -478,247 +795,44 @@ header {
                 }
         }
 
-        h2 {
-            margin: 10rem auto 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 22rem;
-            height: 5rem;
-            background-color: #333333;
-            border: 2px solid #000;
-            @include FPHeader();
-            font-weight: 500;
-            font-size: 1.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: #fff;
-            cursor: pointer;
-            &:hover {
-                transform: scaleX(0.3rem);
-                letter-spacing: 0.15em;
-                transition: 0.35s;
-                background-color: #fff;
-                border: 2px solid #000;
-                color: #333333;
-            }
-        }
-
-        .firstPageRemove {
-            position: absolute;
-            right: 17.5%;
-            bottom: 0;
-            display: none;
-            justify-content: center;
-            align-items: center;
-            width: 13rem;
-            height: 5rem;
-            background-color: #333333;
-            @include FPHeader();
-            font-weight: 500;
-            font-size: 1.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            color: #fff;
-            cursor: pointer;
-            &:hover {
-                transform: scaleY(0.3rem);
-                letter-spacing: 0.15em;
-                transition: 0.35s;
-                background-color: #fff;
-                border: 1px solid #000;
-                color: #333333;
-            }
-        }
-
-    @media (max-width: 1050px) {
-        
-        .firstPageMenu {
-            width: 80%;
-        }
-        
-        .firstPageCatalog {
-            width: 80%;
-        }
-    }
-
-    @media (max-width: 770px) {
-        
-        .firstPageMenu {
-            width: 90%;
-        }
-        
-        .firstPageCatalog {
-            width: 90%;
-        }
-    }
-
-    @media (max-width: 600px) {
-        
-        .firstPageMenu {
-
-            .firstPageMenuBlock{
-                width: 30%;
-
-                    div:nth-child(odd) {
-                        
-                        p{
-                            letter-spacing: 2px;
-                            font-size: 1.8rem;
-                        }
-                    }
-            }
-        }
-        
-        .firstPageCatalog {
-            justify-content: space-around;
-                
-                div {
-                    width: 35%;
-                }
-        }
-        
-        h2 {
-            margin-bottom: 25rem;
-        }
-        
-        .firstPageRemove {
-            bottom: -10rem;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
-
-    @media (max-width: 490px) {
-        
-        .firstPageMenu {
-            justify-content: space-around;
-
-                .firstPageMenuBlock {
-                    width: 35%;
-                }
-        }
-        
-        .firstPageCatalog {
+        @media (max-width: 1050px) {
             
-            justify-content: space-around;
-                div {
-                    width: 65%;
-                }
-        }
-        
-        h2 {
-            width: 16rem;
-        }
-    }
-}
-
-.secondPage {
-    width: 60%;
-    margin: 18rem auto 0;
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 40px;
-    justify-content: space-between;
-
-        .secondPageBlock1{
-            width: 60%;
-            height: fit-content;
-
-                p {
-                    margin-top: 5px;
-                    @include FPHeader();
-                    font-size: 1.6rem;
-                    position: relative;
-
-                        #more {
-                            display: none;
-                        }
-                }
-
-                .halfBlur::after {
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    bottom: 0;
-                    height: 60px;
-                    width: 100%;
-                    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.7794468129048494) 67%, rgba(255,255,255,0.33967090254070376) 83%);
-                }
-
-                h1 {
-                    margin: 10px 0 0 5px;
-                    @include FPHeader();
-                    font-weight: 500;
-                    font-style: 1.8rem;
-                    letter-spacing: 0.1em;
-                    text-transform: uppercase;
-                    border: 2px solid #fff;
-                    border-bottom: 2px dashed #333333;
-                    width: fit-content;
-                    cursor: pointer;
-                    transition: 0.5s;
-                    &:hover {
-                        border: 2px dashed #fff;
-                    }
-                }
-        }
-
-        .secondPageBlock2 {
-            width: 30%;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            row-gap: 20px;
-                div {
-                    width: 48%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    &:hover {
-                        svg {
-                            transform: scale(1.1);
-                        }
-                    }
-                        
-                        svg {
-                            width: 60px;
-                            cursor: default;
-                            transition: 0.5s;
-                        }
-
-                        p {
-                            margin-top: 10px;
-                            text-align: center;
-                            @include FPHeader();
-                            font-size: 1.4rem;
-                        }
-                }
-        }
-
-    @media (max-width: 1050px) {
-        width: 70%;
-    }
-    @media (max-width: 770px) {
-        width: 80%;
-        // 645
-    }
-    @media (max-width: 645px) {
-        justify-content: center;
-            .secondPageBlock1 {
+            .thirdPageMiniCatalog {
                 width: 80%;
-
-                    .halfBlur::after {
-                        height: 40px;
+            }
+        }
+    
+        @media (max-width: 770px) {            
+            
+            .thirdPageMiniCatalog {
+                width: 90%;
+            }
+        }
+    
+        @media (max-width: 600px) {
+            
+            .thirdPageMiniCatalog {
+                justify-content: space-around;
+                    
+                    div {
+                        width: 35%;
                     }
             }
-            .secondPageBlock2 {
-                width: 70%;
+        }
+    
+        @media (max-width: 490px) {
+            
+            .thirdPageMiniCatalog {
+                
+                justify-content: space-around;
+                    div {
+                        width: 65%;
+                    }
             }
-    }
+        }
 }
 
-.thirdPage {
+.forthPage {
     width: 100%;
     background-color: black;
     border-top: 1px solid #fff;
@@ -742,7 +856,7 @@ header {
             color: #fff;
         }
 
-        .thirdPageBlocks {
+        .forthPageBlocks {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -757,12 +871,12 @@ header {
             @media (max-width: 580px) {
                 width: 90%;
                 flex-direction: column;
-                .thirdPageBlocksLeft {
+                .forthPageBlocksLeft {
                     margin-bottom: 30px;    
                 }
             }
 
-                .thirdPageBlocksLeft {
+                .forthPageBlocksLeft {
                     width: 35%;
                     display: flex;
                     flex-direction: column;
@@ -787,7 +901,8 @@ header {
                         }
                 }
 
-                .thirdPageBlocksRight {
+                .forthPageBlocksRight {
+                    ////dda
                     width: 50%;
                     height: 9rem;
                     border: 1px solid #fff;
@@ -849,7 +964,7 @@ header {
         }
 }
 
-.forthPage {
+.fivthPage {
     width: 80%;
     display: flex;
     flex-wrap: wrap;
@@ -858,11 +973,11 @@ header {
     margin: 8rem auto 6rem;
     
 
-        .forthPageLinks {
+        .fivthPageLinks {
             width: 23%;
 
                 h1 {
-                    @include ForthPageH1();
+                    @include FivthPageH1();
                 }
 
                 div {
@@ -886,11 +1001,11 @@ header {
                 }
         }
 
-        .forthPagePayment {
+        .fivthPagePayment {
             width: 23%;
 
                 h1 {
-                    @include ForthPageH1();
+                    @include FivthPageH1();
                 }
 
                 p {
@@ -904,11 +1019,11 @@ header {
                 }
         }
 
-        .forthPageContacts {
+        .fivthPageContacts {
             width: 23%;
 
                 h1 {
-                    @include ForthPageH1();
+                    @include FivthPageH1();
                 }
 
                 div {
@@ -928,11 +1043,11 @@ header {
                 }
         }
 
-        .forthPageSocials {
+        .fivthPageSocials {
             width: 23%;
 
                 h1 {
-                    @include ForthPageH1();
+                    @include FivthPageH1();
                 }
 
                 p {
@@ -956,13 +1071,13 @@ header {
 
     @media (max-width: 735px) {
         justify-content: space-around;
-            .forthPageLinks, .forthPagePayment, .forthPageContacts, .forthPageSocials {
+            .fivthPageLinks, .fivthPagePayment, .fivthPageContacts, .fivthPageSocials {
             width: 35%;
             }
     }
     @media (max-width: 500px) {
         justify-content: center;
-            .forthPageLinks, .forthPagePayment, .forthPageContacts, .forthPageSocials {
+            .fivthPageLinks, .fivthPagePayment, .fivthPageContacts, .fivthPageSocials {
             width: 71%;
             }
     }
@@ -996,13 +1111,11 @@ footer {
     }
     @media (max-width: 540px) {
         justify-content: space-around;
-        
+            
             p {
                 width: 35%;
                 text-align: center;
             }
     }
 }
-
-
 

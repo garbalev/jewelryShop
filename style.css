@@ -122,6 +122,64 @@ p {
   fill: #aaaaaa;
 }
 
+.openBurgerMenu {
+  -webkit-animation: openBurger 1.5s forwards;
+          animation: openBurger 1.5s forwards;
+}
+
+@-webkit-keyframes openBurger {
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+}
+
+@keyframes openBurger {
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+}
+
+.closeBurgerMenu {
+  -webkit-animation: closeBurger 1s forwards;
+          animation: closeBurger 1s forwards;
+}
+
+@-webkit-keyframes closeBurger {
+  0% {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    -webkit-transform: rotate();
+            transform: rotate();
+  }
+}
+
+@keyframes closeBurger {
+  0% {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    -webkit-transform: rotate();
+            transform: rotate();
+  }
+}
+
 .firstPage {
   height: 100vh;
   width: 100%;
@@ -1306,7 +1364,7 @@ p {
             justify-content: center;
   }
   .seventhPage .seventhPageLinks, .seventhPage .seventhPagePayment, .seventhPage .seventhPageContacts, .seventhPage .seventhPageSocials {
-    width: 51%;
+    width: 71%;
   }
 }
 
@@ -1356,64 +1414,6 @@ footer div p:last-child {
   footer p {
     width: 35%;
     text-align: center;
-  }
-}
-
-.openBurgerMenu {
-  -webkit-animation: openBurger 1.5s forwards;
-          animation: openBurger 1.5s forwards;
-}
-
-@-webkit-keyframes openBurger {
-  50% {
-    opacity: 0.8;
-  }
-  100% {
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-  }
-}
-
-@keyframes openBurger {
-  50% {
-    opacity: 0.8;
-  }
-  100% {
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-  }
-}
-
-.closeBurgerMenu {
-  -webkit-animation: closeBurger 1s forwards;
-          animation: closeBurger 1s forwards;
-}
-
-@-webkit-keyframes closeBurger {
-  0% {
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-  }
-  50% {
-    opacity: 0.8;
-  }
-  100% {
-    -webkit-transform: rotate();
-            transform: rotate();
-  }
-}
-
-@keyframes closeBurger {
-  0% {
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-  }
-  50% {
-    opacity: 0.8;
-  }
-  100% {
-    -webkit-transform: rotate();
-            transform: rotate();
   }
 }
 /*# sourceMappingURL=style.css.map */

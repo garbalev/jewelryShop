@@ -116,6 +116,35 @@ p {
         }
 }
 
+.openBurgerMenu {
+    animation: openBurger 1.5s forwards;
+
+    @keyframes openBurger {
+        50% {
+            opacity: 0.8;
+        }
+        100% {
+            transform: rotate(-90deg);
+        }
+    }
+}
+
+.closeBurgerMenu {
+    animation: closeBurger 1s forwards;
+
+    @keyframes closeBurger {
+        0% {
+            transform: rotate(-90deg);
+        }
+        50% {
+            opacity: 0.8;
+        }
+        100% {
+            transform: rotate();
+        }
+    }
+}
+
 .firstPage {
   height: 100vh;
   width: 100%;
@@ -950,7 +979,7 @@ p {
     @media (max-width: 500px) {
         justify-content: center;
             .seventhPageLinks, .seventhPagePayment, .seventhPageContacts, .seventhPageSocials {
-            width: 51%;
+            width: 71%;
             }
     }
 }
@@ -990,31 +1019,4 @@ footer {
     }
 }
 
-.openBurgerMenu {
-    animation: openBurger 1.5s forwards;
 
-    @keyframes openBurger {
-        50% {
-            opacity: 0.8;
-        }
-        100% {
-            transform: rotate(-90deg);
-        }
-    }
-}
-
-.closeBurgerMenu {
-    animation: closeBurger 1s forwards;
-
-    @keyframes closeBurger {
-        0% {
-            transform: rotate(-90deg);
-        }
-        50% {
-            opacity: 0.8;
-        }
-        100% {
-            transform: rotate();
-        }
-    }
-}

@@ -427,358 +427,289 @@ header .headerContent .menuButtonBlink:hover {
 
 .firstPage {
   width: 100%;
-  padding-top: 9rem;
-  position: relative;
+  margin-top: 6rem;
 }
 
 .firstPage .firstPageMenu {
-  width: 65%;
+  width: 30%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  row-gap: 75px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.firstPage .firstPageMenu .firstPageMenuBlock {
-  position: relative;
-  width: 15%;
-}
-
-.firstPage .firstPageMenu .firstPageMenuBlock div:nth-child(odd) {
-  width: 100%;
-  height: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 1rem;
-  border-bottom: 2px solid #d6d6d6;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-  cursor: pointer;
-}
-
-.firstPage .firstPageMenu .firstPageMenuBlock div:nth-child(odd):hover {
-  background-color: #333333;
-  border-radius: 5px;
-}
-
-.firstPage .firstPageMenu .firstPageMenuBlock div:nth-child(odd):hover p {
-  color: #fff;
-}
-
-.firstPage .firstPageMenu .firstPageMenuBlock div:nth-child(odd):hover svg {
-  fill: #fff;
-}
-
-.firstPage .firstPageMenu .firstPageMenuBlock div:nth-child(odd) p {
+.firstPage .firstPageMenu a, .firstPage .firstPageMenu span {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #333333;
-  font-size: 1.6rem;
-  color: #333333;
-  margin-left: 3px;
 }
 
-.firstPage .firstPageMenu .firstPageMenuBlock div:nth-child(odd) svg {
-  margin-right: 3px;
+.firstPage .firstPageMenu a:hover, .firstPage .firstPageMenu span:hover {
+  text-decoration: none;
 }
 
-.firstPage .firstPageMenu .firstPageMenuBlock div:nth-child(even) {
-  width: 100%;
-  display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  top: 3rem;
-  position: absolute;
-  background-color: #333333;
-  border-radius: 0 0 10px 10px;
+.firstPage .firstPageMenu span {
+  font-size: 16px;
 }
 
-.firstPage .firstPageMenu .firstPageMenuBlock div:nth-child(even) p {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #333333;
-  color: #fff;
-  font-size: 1.4rem;
-  border-top: 1px solid #d6d6d6;
-  margin-bottom: 5px;
-  padding-left: 3px;
-  cursor: pointer;
-}
-
-.firstPage .firstPageMenu .firstPageMenuBlock div:nth-child(even) p:hover {
-  font-weight: 900;
-  text-decoration: underline;
-}
-
-.firstPage .firstPageCatalog {
+.firstPage .firstPageContent {
   width: 65%;
-  margin: 12rem auto 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   row-gap: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5rem auto 0;
 }
 
-.firstPage .firstPageCatalog div {
-  width: 30%;
+.firstPage .firstPageContent .firstPageContentLeft {
+  width: 46%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  border: 1px solid #fff;
-  border-radius: 10px;
-  cursor: pointer;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid gray;
+  padding: 1rem;
 }
 
-.firstPage .firstPageCatalog div:hover {
-  border: 1px solid #333333;
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+.firstPage .firstPageContent .firstPageContentLeft div {
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+  padding-bottom: 5px;
+  border-bottom: 1px solid gray;
 }
 
-.firstPage .firstPageCatalog div:hover img {
+.firstPage .firstPageContent .firstPageContentLeft div:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.firstPage .firstPageContent .firstPageContentLeft div img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
   -webkit-filter: blur(0);
           filter: blur(0);
 }
 
-.firstPage .firstPageCatalog div:hover svg {
-  fill: #fff;
-}
-
-.firstPage .firstPageCatalog div img {
-  width: 80%;
-  margin: 1.2rem 0 2rem;
+.firstPage .firstPageContent .firstPageContentLeft img {
+  width: 32%;
   -webkit-filter: blur(0.5px);
           filter: blur(0.5px);
-  border-radius: 10px;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
 }
 
-.firstPage .firstPageCatalog div p {
+.firstPage .firstPageContent .firstPageContentRight {
+  width: 46%;
+  border: 1px solid gray;
+  padding: 2rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.firstPage .firstPageContent .firstPageContentRight h1 {
+  margin: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #333333;
-  font-size: 1.6rem;
+  font-weight: 500;
+  font-size: 2.2rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
-.firstPage .firstPageCatalog div h3 {
+.firstPage .firstPageContent .firstPageContentRight #border {
+  width: 100%;
+  height: 1px;
+  background-color: #979797;
+}
+
+.firstPage .firstPageContent .firstPageContentRight p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.firstPage .firstPageContent .firstPageContentRight h2 {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #333333;
   font-weight: 600;
   font-size: 2.4rem;
-  margin: 1rem 0;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0;
 }
 
-.firstPage .firstPageCatalog div a {
+.firstPage .firstPageContent .firstPageContentRight .firstPageContentRightButton {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 12rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.firstPage .firstPageContent .firstPageContentRight .firstPageContentRightButton #buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 11rem;
   height: 4rem;
   background-color: #333333;
   border: 1px solid #333333;
-  border-radius: 4px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #333333;
-  text-decoration: none;
+  color: #fff;
   font-size: 1.8rem;
   letter-spacing: 0.05em;
-  color: #fff;
-  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: left;
 }
 
-.firstPage .firstPageCatalog div a:hover {
+.firstPage .firstPageContent .firstPageContentRight .firstPageContentRightButton #buy:hover {
   background-color: #fff;
-  color: #333333;
   border: 1px solid #333333;
+  color: #333333;
+  -webkit-transform: scaleX(1.01);
+          transform: scaleX(1.01);
 }
 
-.firstPage .firstPageCatalog div a:hover svg {
-  fill: #333333;
-}
-
-.firstPage .firstPageCatalog div a svg {
-  width: 2rem;
-  fill: #333333;
-}
-
-.firstPage h2 {
-  margin: 10rem auto 0;
+.firstPage .firstPageContent .firstPageContentRight .firstPageContentRightButton #addToCart {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 22rem;
-  height: 5rem;
-  background-color: #333333;
-  border: 2px solid #000;
+  height: 4rem;
+  background-color: #fff;
+  border: 1px solid #333333;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #333333;
-  font-weight: 500;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: #fff;
-  cursor: pointer;
-}
-
-.firstPage h2:hover {
-  -webkit-transform: scaleX(0.3rem);
-          transform: scaleX(0.3rem);
-  letter-spacing: 0.15em;
-  -webkit-transition: 0.35s;
-  transition: 0.35s;
-  background-color: #fff;
-  border: 2px solid #000;
   color: #333333;
-}
-
-.firstPage .firstPageRemove {
-  position: absolute;
-  right: 17.5%;
-  bottom: 0;
-  display: none;
+  font-size: 1.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 13rem;
-  height: 5rem;
+  margin-right: 2rem;
+}
+
+.firstPage .firstPageContent .firstPageContentRight .firstPageContentRightButton #addToCart:hover {
   background-color: #333333;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #333333;
-  font-weight: 500;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
+  border: 1px solid #333333;
   color: #fff;
-  cursor: pointer;
+  -webkit-transform: scaleX(1.01);
+          transform: scaleX(1.01);
 }
 
-.firstPage .firstPageRemove:hover {
-  -webkit-transform: scaleY(0.3rem);
-          transform: scaleY(0.3rem);
-  letter-spacing: 0.15em;
-  -webkit-transition: 0.35s;
-  transition: 0.35s;
-  background-color: #fff;
-  border: 1px solid #000;
-  color: #333333;
-}
-
-@media (max-width: 1050px) {
+@media (max-width: 1200px) {
   .firstPage .firstPageMenu {
+    width: 40%;
+  }
+  .firstPage .firstPageContent {
     width: 80%;
   }
-  .firstPage .firstPageCatalog {
-    width: 80%;
+  .firstPage .firstPageContent .firstPageContentRight {
+    padding: 1rem;
   }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 900px) {
   .firstPage .firstPageMenu {
-    width: 90%;
+    width: 45%;
   }
-  .firstPage .firstPageCatalog {
+  .firstPage .firstPageContent {
     width: 90%;
   }
 }
 
-@media (max-width: 600px) {
-  .firstPage .firstPageMenu .firstPageMenuBlock {
-    width: 30%;
+@media (max-width: 800px) {
+  .firstPage .firstPageMenu {
+    width: 52%;
   }
-  .firstPage .firstPageMenu .firstPageMenuBlock div:nth-child(odd) p {
-    letter-spacing: 2px;
-    font-size: 1.8rem;
+  .firstPage .firstPageContent {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .firstPage .firstPageCatalog {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+  .firstPage .firstPageContent .firstPageContentLeft {
+    width: 55%;
   }
-  .firstPage .firstPageCatalog div {
-    width: 35%;
+  .firstPage .firstPageContent .firstPageContentRight {
+    width: 75%;
+    display: block;
+    border: 0;
   }
-  .firstPage h2 {
-    margin-bottom: 25rem;
+  .firstPage .firstPageContent .firstPageContentRight #border {
+    margin: 2rem 0;
   }
-  .firstPage .firstPageRemove {
-    bottom: -10rem;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+  .firstPage .firstPageContent .firstPageContentRight h2 {
+    margin-bottom: 2rem;
+    margin-left: 5px;
   }
 }
 
-@media (max-width: 490px) {
+@media (max-width: 560px) {
   .firstPage .firstPageMenu {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    width: 70%;
   }
-  .firstPage .firstPageMenu .firstPageMenuBlock {
-    width: 35%;
-  }
-  .firstPage .firstPageCatalog {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .firstPage .firstPageCatalog div {
+  .firstPage .firstPageContent .firstPageContentLeft {
     width: 65%;
   }
-  .firstPage h2 {
-    width: 16rem;
+  .firstPage .firstPageContent .firstPageContentRight h1 {
+    text-align: center;
+  }
+  .firstPage .firstPageContent .firstPageContentRight p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .firstPage .firstPageMenu {
+    width: 85%;
+  }
+  .firstPage .firstPageContent .firstPageContentLeft {
+    width: 85%;
   }
 }
 
@@ -803,8 +734,18 @@ header .headerContent .menuButtonBlink:hover {
   height: fit-content;
 }
 
+.secondPage .secondPageBlock1 h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin-top: 0;
+  margin-left: 5px;
+}
+
 .secondPage .secondPageBlock1 p {
-  margin-top: 5px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -828,7 +769,7 @@ header .headerContent .menuButtonBlink:hover {
   background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0.779447) 67%, rgba(255, 255, 255, 0.339671) 83%);
 }
 
-.secondPage .secondPageBlock1 h1 {
+.secondPage .secondPageBlock1 h2 {
   margin: 10px 0 0 5px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 14px;
@@ -848,7 +789,7 @@ header .headerContent .menuButtonBlink:hover {
   transition: 0.5s;
 }
 
-.secondPage .secondPageBlock1 h1:hover {
+.secondPage .secondPageBlock1 h2:hover {
   border: 2px dashed #fff;
 }
 
@@ -932,13 +873,187 @@ header .headerContent .menuButtonBlink:hover {
 
 .thirdPage {
   width: 100%;
+  margin: 12rem auto 0;
+}
+
+.thirdPage p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  font-size: 2.1rem;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.thirdPage h1 {
+  font-family: serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #333333;
+  text-align: center;
+  width: 80%;
+  margin: 1.5rem auto;
+}
+
+.thirdPage .thirdPageMiniCatalog {
+  width: 65%;
+  margin: 4.5rem auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 40px;
+}
+
+.thirdPage .thirdPageMiniCatalog div {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.thirdPage .thirdPageMiniCatalog div:hover {
+  border: 1px solid #333333;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.thirdPage .thirdPageMiniCatalog div:hover img {
+  -webkit-filter: blur(0);
+          filter: blur(0);
+}
+
+.thirdPage .thirdPageMiniCatalog div:hover svg {
+  fill: #fff;
+}
+
+.thirdPage .thirdPageMiniCatalog div img {
+  width: 80%;
+  margin: 1.2rem 0 2rem;
+  -webkit-filter: blur(0.5px);
+          filter: blur(0.5px);
+  border-radius: 10px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.thirdPage .thirdPageMiniCatalog div p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  font-size: 1.6rem;
+}
+
+.thirdPage .thirdPageMiniCatalog div h3 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin: 1rem 0;
+}
+
+.thirdPage .thirdPageMiniCatalog div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 12rem;
+  height: 4rem;
+  background-color: #333333;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  text-decoration: none;
+  font-size: 1.8rem;
+  letter-spacing: 0.05em;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.thirdPage .thirdPageMiniCatalog div a:hover {
+  background-color: #fff;
+  color: #333333;
+  border: 1px solid #333333;
+}
+
+.thirdPage .thirdPageMiniCatalog div a:hover svg {
+  fill: #333333;
+}
+
+.thirdPage .thirdPageMiniCatalog div a svg {
+  width: 2rem;
+  fill: #333333;
+}
+
+@media (max-width: 1050px) {
+  .thirdPage .thirdPageMiniCatalog {
+    width: 80%;
+  }
+}
+
+@media (max-width: 770px) {
+  .thirdPage .thirdPageMiniCatalog {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .thirdPage .thirdPageMiniCatalog {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .thirdPage .thirdPageMiniCatalog div {
+    width: 35%;
+  }
+}
+
+@media (max-width: 490px) {
+  .thirdPage .thirdPageMiniCatalog {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .thirdPage .thirdPageMiniCatalog div {
+    width: 65%;
+  }
+}
+
+.forthPage {
+  width: 100%;
   background-color: black;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   margin-top: 13rem;
 }
 
-.thirdPage h3 {
+.forthPage h3 {
   margin-top: 10rem;
   text-align: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -949,7 +1064,7 @@ header .headerContent .menuButtonBlink:hover {
   font-size: 2.1rem;
 }
 
-.thirdPage h1 {
+.forthPage h1 {
   margin: 1.5rem 0 6rem;
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
@@ -958,7 +1073,7 @@ header .headerContent .menuButtonBlink:hover {
   color: #fff;
 }
 
-.thirdPage .thirdPageBlocks {
+.forthPage .forthPageBlocks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -973,31 +1088,31 @@ header .headerContent .menuButtonBlink:hover {
 }
 
 @media (max-width: 840px) {
-  .thirdPage .thirdPageBlocks {
+  .forthPage .forthPageBlocks {
     width: 70%;
   }
 }
 
 @media (max-width: 670px) {
-  .thirdPage .thirdPageBlocks {
+  .forthPage .forthPageBlocks {
     width: 80%;
   }
 }
 
 @media (max-width: 580px) {
-  .thirdPage .thirdPageBlocks {
+  .forthPage .forthPageBlocks {
     width: 90%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .thirdPage .thirdPageBlocks .thirdPageBlocksLeft {
+  .forthPage .forthPageBlocks .forthPageBlocksLeft {
     margin-bottom: 30px;
   }
 }
 
-.thirdPage .thirdPageBlocks .thirdPageBlocksLeft {
+.forthPage .forthPageBlocks .forthPageBlocksLeft {
   width: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1012,12 +1127,12 @@ header .headerContent .menuButtonBlink:hover {
 }
 
 @media (max-width: 580px) {
-  .thirdPage .thirdPageBlocks .thirdPageBlocksLeft {
+  .forthPage .forthPageBlocks .forthPageBlocksLeft {
     width: 60%;
   }
 }
 
-.thirdPage .thirdPageBlocks .thirdPageBlocksLeft div {
+.forthPage .forthPageBlocks .forthPageBlocksLeft div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1026,11 +1141,11 @@ header .headerContent .menuButtonBlink:hover {
           align-items: center;
 }
 
-.thirdPage .thirdPageBlocks .thirdPageBlocksLeft div img {
+.forthPage .forthPageBlocks .forthPageBlocksLeft div img {
   margin-right: 2rem;
 }
 
-.thirdPage .thirdPageBlocks .thirdPageBlocksLeft div p {
+.forthPage .forthPageBlocks .forthPageBlocksLeft div p {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -1039,7 +1154,7 @@ header .headerContent .menuButtonBlink:hover {
   font-size: 1.8rem;
 }
 
-.thirdPage .thirdPageBlocks .thirdPageBlocksRight {
+.forthPage .forthPageBlocks .forthPageBlocksRight {
   width: 50%;
   height: 9rem;
   border: 1px solid #fff;
@@ -1048,18 +1163,18 @@ header .headerContent .menuButtonBlink:hover {
 }
 
 @media (max-width: 670px) {
-  .thirdPage .thirdPageBlocks .thirdPageBlocksRight {
+  .forthPage .forthPageBlocks .forthPageBlocksRight {
     width: 60%;
   }
 }
 
 @media (max-width: 400px) {
-  .thirdPage .thirdPageBlocks .thirdPageBlocksRight {
+  .forthPage .forthPageBlocks .forthPageBlocksRight {
     width: 70%;
   }
 }
 
-.thirdPage .thirdPageBlocks .thirdPageBlocksRight div {
+.forthPage .forthPageBlocks .forthPageBlocksRight div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1072,7 +1187,7 @@ header .headerContent .menuButtonBlink:hover {
   height: 100%;
 }
 
-.thirdPage .thirdPageBlocks .thirdPageBlocksRight div input {
+.forthPage .forthPageBlocks .forthPageBlocksRight div input {
   width: 45%;
   height: 4rem;
   padding: 0;
@@ -1080,16 +1195,16 @@ header .headerContent .menuButtonBlink:hover {
   border: 1px solid #D6D6D6;
 }
 
-.thirdPage .thirdPageBlocks .thirdPageBlocksRight div input:active {
+.forthPage .forthPageBlocks .forthPageBlocksRight div input:active {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.thirdPage .thirdPageBlocks .thirdPageBlocksRight div input:focus {
+.forthPage .forthPageBlocks .forthPageBlocksRight div input:focus {
   font-size: 2rem;
 }
 
-.thirdPage .thirdPageBlocks .thirdPageBlocksRight div a {
+.forthPage .forthPageBlocks .forthPageBlocksRight div a {
   height: 4rem;
   width: 40%;
   text-decoration: none;
@@ -1114,7 +1229,7 @@ header .headerContent .menuButtonBlink:hover {
   cursor: pointer;
 }
 
-.thirdPage .thirdPageBlocks .thirdPageBlocksRight div a:hover {
+.forthPage .forthPageBlocks .forthPageBlocksRight div a:hover {
   -webkit-transform: translateX(0.1rem);
           transform: translateX(0.1rem);
   letter-spacing: 0.1em;
@@ -1125,7 +1240,7 @@ header .headerContent .menuButtonBlink:hover {
   color: #000;
 }
 
-.forthPage {
+.fivthPage {
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1139,11 +1254,11 @@ header .headerContent .menuButtonBlink:hover {
   margin: 8rem auto 6rem;
 }
 
-.forthPage .forthPageLinks {
+.fivthPage .fivthPageLinks {
   width: 23%;
 }
 
-.forthPage .forthPageLinks h1 {
+.fivthPage .fivthPageLinks h1 {
   border-bottom: 1px solid #000;
   margin: 0 0 3rem;
   padding-bottom: 1rem;
@@ -1154,7 +1269,7 @@ header .headerContent .menuButtonBlink:hover {
   text-transform: uppercase;
 }
 
-.forthPage .forthPageLinks div {
+.fivthPage .fivthPageLinks div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1164,7 +1279,7 @@ header .headerContent .menuButtonBlink:hover {
           flex-direction: column;
 }
 
-.forthPage .forthPageLinks div a {
+.fivthPage .fivthPageLinks div a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1181,18 +1296,18 @@ header .headerContent .menuButtonBlink:hover {
   cursor: pointer;
 }
 
-.forthPage .forthPageLinks div a:hover {
+.fivthPage .fivthPageLinks div a:hover {
   color: #969595;
   text-decoration: underline;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-.forthPage .forthPagePayment {
+.fivthPage .fivthPagePayment {
   width: 23%;
 }
 
-.forthPage .forthPagePayment h1 {
+.fivthPage .fivthPagePayment h1 {
   border-bottom: 1px solid #000;
   margin: 0 0 3rem;
   padding-bottom: 1rem;
@@ -1203,7 +1318,7 @@ header .headerContent .menuButtonBlink:hover {
   text-transform: uppercase;
 }
 
-.forthPage .forthPagePayment p {
+.fivthPage .fivthPagePayment p {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -1212,15 +1327,15 @@ header .headerContent .menuButtonBlink:hover {
   margin-bottom: 2rem;
 }
 
-.forthPage .forthPagePayment img {
+.fivthPage .fivthPagePayment img {
   margin-right: 2rem;
 }
 
-.forthPage .forthPageContacts {
+.fivthPage .fivthPageContacts {
   width: 23%;
 }
 
-.forthPage .forthPageContacts h1 {
+.fivthPage .fivthPageContacts h1 {
   border-bottom: 1px solid #000;
   margin: 0 0 3rem;
   padding-bottom: 1rem;
@@ -1231,7 +1346,7 @@ header .headerContent .menuButtonBlink:hover {
   text-transform: uppercase;
 }
 
-.forthPage .forthPageContacts div {
+.fivthPage .fivthPageContacts div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1241,11 +1356,11 @@ header .headerContent .menuButtonBlink:hover {
   margin-bottom: 1.5rem;
 }
 
-.forthPage .forthPageContacts div svg {
+.fivthPage .fivthPageContacts div svg {
   cursor: default;
 }
 
-.forthPage .forthPageContacts div p {
+.fivthPage .fivthPageContacts div p {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -1254,11 +1369,11 @@ header .headerContent .menuButtonBlink:hover {
   margin-left: 2rem;
 }
 
-.forthPage .forthPageSocials {
+.fivthPage .fivthPageSocials {
   width: 23%;
 }
 
-.forthPage .forthPageSocials h1 {
+.fivthPage .fivthPageSocials h1 {
   border-bottom: 1px solid #000;
   margin: 0 0 3rem;
   padding-bottom: 1rem;
@@ -1269,7 +1384,7 @@ header .headerContent .menuButtonBlink:hover {
   text-transform: uppercase;
 }
 
-.forthPage .forthPageSocials p {
+.fivthPage .fivthPageSocials p {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -1278,35 +1393,35 @@ header .headerContent .menuButtonBlink:hover {
   margin-bottom: 2rem;
 }
 
-.forthPage .forthPageSocials svg {
+.fivthPage .fivthPageSocials svg {
   margin-right: 7px;
 }
 
-.forthPage .forthPageSocials svg:hover {
+.fivthPage .fivthPageSocials svg:hover {
   fill: #aaaaaa;
 }
 
-.forthPage .forthPageSocials svg:last-child {
+.fivthPage .fivthPageSocials svg:last-child {
   margin: 0;
 }
 
 @media (max-width: 735px) {
-  .forthPage {
+  .fivthPage {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .forthPage .forthPageLinks, .forthPage .forthPagePayment, .forthPage .forthPageContacts, .forthPage .forthPageSocials {
+  .fivthPage .fivthPageLinks, .fivthPage .fivthPagePayment, .fivthPage .fivthPageContacts, .fivthPage .fivthPageSocials {
     width: 35%;
   }
 }
 
 @media (max-width: 500px) {
-  .forthPage {
+  .fivthPage {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .forthPage .forthPageLinks, .forthPage .forthPagePayment, .forthPage .forthPageContacts, .forthPage .forthPageSocials {
+  .fivthPage .fivthPageLinks, .fivthPage .fivthPagePayment, .fivthPage .fivthPageContacts, .fivthPage .fivthPageSocials {
     width: 71%;
   }
 }
@@ -1359,4 +1474,4 @@ footer div p:last-child {
     text-align: center;
   }
 }
-/*# sourceMappingURL=catalog.css.map */
+/*# sourceMappingURL=ringDG.css.map */
